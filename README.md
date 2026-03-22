@@ -1,78 +1,36 @@
-# PDFLines Public
+# PDFLines
 
-Public technical examples and educational materials related to PDFLines.
+PDFLines is a PDF-focused project that publishes public technical examples and developer-facing reference materials.
 
-This repository currently contains a minimal Node.js example showing how to merge multiple PDF files using `pdf-lib`.
+Website: https://www.pdflines.com
 
-## What this repository is
+This repository contains public technical examples intended for educational use and basic implementation reference. It does not include production infrastructure or private implementation details.
 
-- This repo is for public technical examples and educational materials related to PDFLines
-- Does not contain production code
-- Does not expose private implementation details
-- Intended for transparency and educational use
+## Examples
 
-## Included example
+Currently included:
 
-The current example demonstrates:
+- `examples/pdf-merge-worker/`: a minimal Node.js example that merges multiple PDF files into a single document using `pdf-lib`
 
-- Loading multiple local PDF files
-- Merging their pages into one output PDF
-- Writing the merged result to disk
-- A simple local Node.js file-processing flow
-
-## Tech stack
-
-- Node.js
-- CommonJS modules
-- pdf-lib
-
-## Project structure
-
-```text
-pdflines-public/
-  src/
-    mergePdfs.js
-    index.js
-  samples/
-    .gitkeep
-  output/
-    .gitkeep
-  .gitignore
-  LICENSE
-  package.json
-  README.md
-```
-
-## Setup
+To run the example:
 
 ```bash
+cd examples/pdf-merge-worker
 npm install
-```
-
-## Add sample files
-
-- `samples/sample-1.pdf`
-- `samples/sample-2.pdf`
-
-## Run
-
-```bash
 npm start
 ```
 
-## Expected output
+The example expects these local input files:
+
+- `examples/pdf-merge-worker/samples/sample-1.pdf`
+- `examples/pdf-merge-worker/samples/sample-2.pdf`
+
+It writes the merged result to:
 
 ```text
-output/merged.pdf
+examples/pdf-merge-worker/output/merged.pdf
 ```
 
-## Notes
+## License
 
-- This is an educational example only.
-- It does not include production queueing, storage, rate limiting, or SaaS-specific logic.
-- The script expects valid PDF files in the sample paths before running.
-- The `output/` folder is ignored by Git.
-
-## Website
-
-PDFLines: https://www.pdflines.com
+This repository is available under the MIT License. See `LICENSE` for details.

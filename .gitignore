@@ -1,4 +1,11 @@
 node_modules/
+**/node_modules/
+dist/
+build/
+coverage/
+*.log
 output/
+examples/*/output/*
+!examples/*/output/.gitkeep
 .DS_Store
 .env

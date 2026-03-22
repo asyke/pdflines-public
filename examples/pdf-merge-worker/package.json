@@ -1,7 +1,7 @@
 {
-  "name": "pdflines-public",
+  "name": "pdf-merge-worker-example",
   "version": "1.0.0",
-  "description": "Public technical examples and educational materials related to PDFLines.",
+  "description": "Minimal Node.js example for merging PDF files with pdf-lib.",
   "main": "src/index.js",
   "scripts": {
     "start": "node src/index.js"
