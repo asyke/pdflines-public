@@ -1,24 +1,24 @@
 # PDFLines Public
 
-Public technical examples and developer-facing materials related to PDFLines.
+Public technical examples and educational materials related to PDFLines.
 
 This repository currently contains a minimal Node.js example showing how to merge multiple PDF files using `pdf-lib`.
 
 ## What this repository is
 
-- A public examples and materials repository maintained by PDFLines
-- Intended for transparency and educational use
+- This repo is for public technical examples and educational materials related to PDFLines
 - Does not contain production code
 - Does not expose private implementation details
+- Intended for transparency and educational use
 
 ## Included example
 
 The current example demonstrates:
 
 - Loading multiple local PDF files
-- Copying pages into a merged output document
+- Merging their pages into one output PDF
 - Writing the merged result to disk
-- A simple local file-processing flow in Node.js
+- A simple local Node.js file-processing flow
 
 ## Tech stack
 
@@ -45,15 +45,11 @@ pdflines-public/
 
 ## Setup
 
-Install dependencies:
-
 ```bash
 npm install
 ```
 
 ## Add sample files
-
-Add two PDF files to the `samples/` directory:
 
 - `samples/sample-1.pdf`
 - `samples/sample-2.pdf`
@@ -66,8 +62,6 @@ npm start
 
 ## Expected output
 
-After the script runs successfully, the merged file will be written to:
-
 ```text
 output/merged.pdf
 ```
@@ -76,8 +70,8 @@ output/merged.pdf
 
 - This is an educational example only.
 - It does not include production queueing, storage, rate limiting, or SaaS-specific logic.
-- The script expects valid PDF files at the sample paths before running.
-- The `output/` folder is ignored by Git, so generated files are not committed.
+- The script expects valid PDF files in the sample paths before running.
+- The `output/` folder is ignored by Git.
 
 ## Website
 
