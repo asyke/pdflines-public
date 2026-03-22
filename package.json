@@ -1,0 +1,14 @@
+{
+  "name": "pdf-merge-worker-example",
+  "version": "1.0.0",
+  "description": "Minimal Node.js example for merging PDF files with pdf-lib.",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js"
+  },
+  "author": "PDFLines contributors",
+  "license": "MIT",
+  "dependencies": {
+    "pdf-lib": "^1.17.1"
+  }
+}
