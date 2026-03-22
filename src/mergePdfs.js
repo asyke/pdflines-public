@@ -3,10 +3,10 @@ const path = require('path');
 const { PDFDocument } = require('pdf-lib');
 
 /**
- * Merge multiple PDF files into a single PDF document.
+ * Merges multiple PDF files into a single PDF document.
  *
- * @param {string[]} inputPaths - Absolute or relative paths to input PDF files.
- * @param {string} outputPath - Absolute or relative path for the merged PDF file.
+ * @param {string[]} inputPaths Absolute or relative paths to source PDF files.
+ * @param {string} outputPath Absolute or relative path for the merged PDF file.
  * @returns {Promise<void>}
  */
 async function mergePdfs(inputPaths, outputPath) {
@@ -31,7 +31,7 @@ async function mergePdfs(inputPaths, outputPath) {
   const mergedPdf = await PDFDocument.create();
 
   for (const inputPath of inputPaths) {
-    // Read each source PDF and copy all of its pages into the output document.
+    // Load each source document and append all pages to the merged PDF.
     const fileBuffer = fs.readFileSync(inputPath);
     const sourcePdf = await PDFDocument.load(fileBuffer);
     const pageIndices = sourcePdf.getPageIndices();

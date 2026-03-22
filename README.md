@@ -1,37 +1,48 @@
-# pdf-merge-worker-example
+# PDFLines Public
 
-Minimal Node.js example for merging PDF files with `pdf-lib`.
+Public technical examples and developer-facing materials related to PDFLines.
 
-## What this project shows
+This repository currently contains a minimal Node.js example showing how to merge multiple PDF files using `pdf-lib`.
 
-This project demonstrates basic PDF merge processing in Node.js. It reads multiple PDF files from a local folder, combines all pages into a single document, and writes the merged result to disk.
+## What this repository is
+
+- A public technical example repository
+- Maintained by PDFLines
+- Does not contain production code
+- Intended for transparency and educational use
+
+## Included example
+
+This repository currently includes:
+
+- A Node.js PDF merge example
+- Multiple input PDFs
+- A merged output file
+- A simple file-processing flow
 
 ## Tech stack
 
 - Node.js
-- CommonJS modules
-- [`pdf-lib`](https://www.npmjs.com/package/pdf-lib)
+- pdf-lib
 
 ## Project structure
 
 ```text
-pdf-merge-worker-example/
+pdflines-public/
   src/
-    mergePdfs.js
     index.js
+    mergePdfs.js
   samples/
     .gitkeep
   output/
     .gitkeep
   .gitignore
   LICENSE
-  README.md
   package.json
+  README.md
 ```
 
 ## Setup
-
-Install dependencies:
 
 ```bash
 npm install
@@ -39,22 +50,20 @@ npm install
 
 ## Add sample files
 
-Add two PDF files to the `samples/` directory:
+Place these files in the `samples/` directory:
 
 - `samples/sample-1.pdf`
 - `samples/sample-2.pdf`
 
 ## Run
 
-Start the example:
-
 ```bash
 npm start
 ```
 
-## Expected result
+## Expected output
 
-After the script runs successfully, the merged file will be written to:
+The merged file will be written to:
 
 ```text
 output/merged.pdf
@@ -62,8 +71,9 @@ output/merged.pdf
 
 ## Notes
 
-- This is a minimal local example and does not include production queueing, storage, or SaaS-specific logic.
-- The script expects valid PDF files at the sample paths before you run it.
-- The `output/` folder is ignored by Git, so generated files are not committed by default.
+- This is an educational example.
+- It does not include production PDFLines infrastructure or private implementation details.
 
-Maintained by the creator of PDFLines: https://www.pdflines.com
+## Website
+
+PDFLines: https://www.pdflines.com
