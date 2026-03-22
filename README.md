@@ -6,23 +6,24 @@ This repository currently contains a minimal Node.js example showing how to merg
 
 ## What this repository is
 
-- A public technical example repository
-- Maintained by PDFLines
-- Does not contain production code
+- A public examples and materials repository maintained by PDFLines
 - Intended for transparency and educational use
+- Does not contain production code
+- Does not expose private implementation details
 
 ## Included example
 
-This repository currently includes:
+The current example demonstrates:
 
-- A Node.js PDF merge example
-- Multiple input PDFs
-- A merged output file
-- A simple file-processing flow
+- Loading multiple local PDF files
+- Copying pages into a merged output document
+- Writing the merged result to disk
+- A simple local file-processing flow in Node.js
 
 ## Tech stack
 
 - Node.js
+- CommonJS modules
 - pdf-lib
 
 ## Project structure
@@ -30,8 +31,8 @@ This repository currently includes:
 ```text
 pdflines-public/
   src/
-    index.js
     mergePdfs.js
+    index.js
   samples/
     .gitkeep
   output/
@@ -44,13 +45,15 @@ pdflines-public/
 
 ## Setup
 
+Install dependencies:
+
 ```bash
 npm install
 ```
 
 ## Add sample files
 
-Place these files in the `samples/` directory:
+Add two PDF files to the `samples/` directory:
 
 - `samples/sample-1.pdf`
 - `samples/sample-2.pdf`
@@ -63,7 +66,7 @@ npm start
 
 ## Expected output
 
-The merged file will be written to:
+After the script runs successfully, the merged file will be written to:
 
 ```text
 output/merged.pdf
@@ -71,8 +74,10 @@ output/merged.pdf
 
 ## Notes
 
-- This is an educational example.
-- It does not include production PDFLines infrastructure or private implementation details.
+- This is an educational example only.
+- It does not include production queueing, storage, rate limiting, or SaaS-specific logic.
+- The script expects valid PDF files at the sample paths before running.
+- The `output/` folder is ignored by Git, so generated files are not committed.
 
 ## Website
 
